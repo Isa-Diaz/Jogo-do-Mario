@@ -1,0 +1,26 @@
+# Codigo que cria uma janela onde o nosso jogo funcionará
+
+import pygame  # importa a biblioteca pygame
+
+from pygame.locals import *  # O '*' diz para importar todas as funções e constantes do submodulo "locals" (que está dentro do 'pygame') 
+
+from sys import exit #importa a função "exit" dentro do modulo "sys", na qual serve para  fechar a janela
+
+
+#Começando o script e iniciando as funções e variaveis dentro do pygame:
+
+pygame.init()
+
+largura = 640 
+altura =480
+
+tela = pygame.display. set_mode((largura, altura)) #criou um 'objeto' no caso a 'tela'
+
+while True: #todo jogo se passa dentro e um loop infinito ou principal, afinal a cada segundo que jogamos ele ter que ficar atualizando 
+     for event in pygame.event.get():  #verifica se algum evento ocorreu
+
+#para fazer a janela fechar quando clicar:
+         if event.type == QUIT: 
+             pygame.quit()
+             exit()
+     pygame.dislplay.update()    #atualiza a tela do jogo, evita que rode uma vez e trave
