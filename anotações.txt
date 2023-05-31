@@ -23,4 +23,4 @@ while True: #todo jogo se passa dentro e um loop infinito ou principal, afinal a
          if event.type == QUIT: 
              pygame.quit()
              exit()
-     pygame.dislplay.update()    #atualiza a tela do jogo, evita que rode uma vez e trave
+pygame.dislplay.update()    #atualiza a tela do jogo, evita que rode uma vez e trave
